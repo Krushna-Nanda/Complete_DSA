@@ -33,3 +33,64 @@ Looking forward to our shared exploration of the vast realm of Data Structures a
 Best regards,
 [ Krushna ]
 ***
+
+To solve this problem, we'll apply a translation transformation to move the center of the circle by the given distances without changing its radius. Here's how we do it:
+
+Given:
+- Radius of the circle (r) = 10
+- Center coordinates of the circle (x_c, y_c) = (1, 4)
+- Translation distances: 5 units towards the X-axis and 1 unit towards the Y-axis
+
+Translation transformation matrix:
+\[
+\begin{bmatrix}
+1 & 0 & \text{dx} \\
+0 & 1 & \text{dy} \\
+0 & 0 & 1
+\end{bmatrix}
+\]
+
+Where dx is the translation distance along the X-axis and dy is the translation distance along the Y-axis.
+
+Applying the translation:
+\[
+\begin{bmatrix}
+1 & 0 & 5 \\
+0 & 1 & 1 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x_c \\
+y_c \\
+1
+\end{bmatrix}
+\]
+
+Now, let's apply this transformation to the center coordinates (1, 4) of the circle:
+
+\[
+\begin{bmatrix}
+1 & 0 & 5 \\
+0 & 1 & 1 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+4 \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 + 5 \\
+4 + 1 \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+6 \\
+5 \\
+1
+\end{bmatrix}
+\]
+
+So, the new center coordinates of the circle after applying the translation are (6, 5). The radius remains unchanged. Therefore, the new circle has a center at (6, 5) and a radius of 10.
