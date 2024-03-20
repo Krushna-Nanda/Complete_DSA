@@ -222,3 +222,81 @@ Various control structures are used in R to control the flow of execution in a p
    ```
 
 These control structures provide flexibility and control over the execution flow of your R programs, allowing you to handle various scenarios and conditions effectively.
+
+##   no 4 wala lq
+
+In R, functions are blocks of reusable code designed to perform a specific task. They help in organizing code, promoting reusability, and improving code readability. Here are some different types of functions used in R along with explanations:
+
+1. **Built-in Functions**:
+   - R comes with a vast collection of built-in functions for various tasks such as mathematical operations, statistical calculations, data manipulation, and more.
+   - Examples:
+     - `mean()`: Calculates the mean of a numeric vector.
+     - `sum()`: Computes the sum of elements in a numeric vector.
+     - `paste()`: Concatenates strings.
+
+     These examples demonstrate the usage of the `mean()` and `sum()` built-in functions in R:
+
+a. **`mean()`: Calculates the mean of a numeric vector**
+```R
+# Calculate the mean of a numeric vector
+numeric_vector <- c(10, 20, 30, 40, 50)
+mean_value <- mean(numeric_vector)
+print(mean_value)
+```
+Output:
+```
+[1] 30
+```
+
+b. **`sum()`: Computes the sum of elements in a numeric vector**
+```R
+# Compute the sum of elements in a numeric vector
+numeric_vector <- c(1, 2, 3, 4, 5)
+sum_value <- sum(numeric_vector)
+print(sum_value)
+```
+Output:
+```
+[1] 15
+```
+
+These examples illustrate how to use the `mean()` function to calculate the average and the `sum()` function to compute the total sum of elements in a numeric vector in R.
+
+2. **User-defined Functions**:
+   - User-defined functions are created by users to perform custom tasks specific to their requirements.
+  These are examples of user-defined functions in R:
+
+1. **Function to Calculate the Square of a Number**:
+```R
+# Define a function to calculate the square of a number
+square <- function(x) {
+  return(x^2)
+}
+
+# Use the square function
+result <- square(5)  # Result will be 25
+print(result)
+```
+Output:
+```
+[1] 25
+```
+
+2. **Function to Add Two Numbers**:
+```R
+# Define a function to add two numbers
+add_numbers <- function(a, b) {
+  return(a + b)
+}
+
+# Use the add_numbers function
+result <- add_numbers(3, 5)  # Result will be 8
+print(result)
+```
+Output:
+```
+[1] 8
+```
+
+These examples demonstrate the creation and usage of user-defined functions in R for calculating the square of a number and adding two numbers.
+
