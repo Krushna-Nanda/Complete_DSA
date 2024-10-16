@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Patteren05 {
+public class Patteren_05 {
     public static void main(String[] args) {
         /*
          * Given an integer n. You need to recreate the pattern given below for any
